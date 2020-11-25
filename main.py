@@ -81,36 +81,55 @@ class Game():
                 for x in range(duration*dense):
                     generate_circle("center",x/dense+start,rev,branches,(x/dense)*off)
         
-        generate_side("up",2,True,100,end=6)
-        generate_side("down",1,False,100,end=5)
+        def horrible():
+            generate_side("up",1,True,100,end=5)
+            generate_side("down",0,False,100,end=4)
+            generate_side("up",3,True,100,end=7)
+            generate_side("down",2,False,100,end=6)
+            generate_side("up",5,True,100,end=9)
+            generate_side("down",4,False,100,end=8)
+            generate_side("up",7,True,100,end=11)
+            generate_side("down",6,False,100,end=10)
+            generate_circle("center",3,False)
+            generate_circle("out",3,True)
+            generate_circle("center",2,False)
+            generate_circle("out",2,True)
+            generate_circle("center",4,False)
+            generate_circle("out",4,True)
+            generate_circle("center",5,False)
+            generate_circle("out",5,True)
+            generate_circle("center",6,False)
+            generate_circle("out",6,True)
+            generate_circle("center",8,False)
+            generate_circle("out",8,True)
+            generate_circle("center",9,False)
+            generate_circle("out",9,True)
+            return
+        
+        def long_():
+            for x in range(2000):generate_circle("out",x/200,True,1)
+            for x in range(2000):generate_circle("center",x/200,False,1)
+        
+        def spiral():
+            generate_spiral("out",0,True,3.2,5,10,20)
+            generate_spiral("center",0,False,3.2,5,10,20)
+            generate_spiral("out",2,True,0.2,9,3)
+            generate_spiral("center",2,False,0.2,9,3)
+            generate_spiral("out",5,True,-0.2,9,3)
+            generate_spiral("center",5,False,-0.2,9,3)
+
+        horrible()
+        
         """
         generate_side("up",1,True,20)
         generate_side("down",1,True,20)
         
         """
-        generate_circle("center",3,True)
-        generate_circle("out",3,False)
         """
         generate_side("left",1,False,20)
         generate_side("right",1,False,20)
-        """
-        for x in range(200):
-            generate_circle("center",x/20-2,True,1)
-        for x in range(200):
-            generate_circle("out",x/20,False,1)
-        """
-        generate_spiral("center",7,True,0.2,5,3)
-        generate_spiral("out",7,False,-0.2,5,3)
-        generate_spiral("center",10.5,True,-0.6,9,2)
-        generate_spiral("out",10.5,False,0.6,9,2)
-        generate_circle("center",10,True)
-        generate_circle("out",10,False)
-        generate_spiral("center",12,True,3,5,5)
-        generate_spiral("out",12,False,3,5,5)
-        generate_circle("center",11,True)
-        generate_circle("out",11,False)
-        """
         
+        """
 
 
 
