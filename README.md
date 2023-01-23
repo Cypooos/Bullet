@@ -1,6 +1,6 @@
 # Bullet
  
-Une démo-concept ou on peut utilliser le remontage temporel pour inverser les missles ET lesquels sont nocif
+Une démo-concept de jeu ou l'on peut remonter le temps pour inverser les missiles ET la couleurs des missiles qui nous font du mal
 
 ## Vidéos :
 
